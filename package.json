@@ -1,9 +1,17 @@
 {
-  "dependencies": {
-    "express": "^5.1.0",
-    "socket.io": "^4.8.1"
+  "name": "quickchat",
+  "version": "1.0.0",
+  "description": "Real-time chat with Socket.IO on Render",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo \"Nothing to build\""
   },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
   }
 }
