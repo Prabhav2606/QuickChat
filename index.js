@@ -12,7 +12,7 @@ io.on("connection", socket => {
   console.log("A user connected");
   socket.on("new-user-joined", name => {
     users[socket.id] = name;
-    socket.emit("welcome", name);
+    socket.emit("Welcome", name);
     socket.broadcast.emit("user-joined", name);
   });
   socket.on("send", msg => {
