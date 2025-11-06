@@ -1,4 +1,4 @@
-const socket = io(); // Auto connects to same host/port
+const socket = io();
 
 const form = document.getElementById("send-container");
 const messageInp = document.getElementById("messageInp");
