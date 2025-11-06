@@ -25,7 +25,7 @@ io.on("connection", socket => {
   });
 });
 
-const PORT = process.env.PORT || 8001;        // ← important
+const PORT = process.env.PORT || 8000;        // ← important
 http.listen(PORT, () => {
   console.log("Server running on port", PORT);
 });
