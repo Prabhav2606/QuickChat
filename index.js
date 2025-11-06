@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const http = require("http").createServer(app);
 const io = require("socket.io")(http, {
-  cors: { origin: "*" } // optional; helpful if you load from other domains
+  cors: {origin: "*"}
 });
 
 app.use(express.static(__dirname));
@@ -25,7 +25,7 @@ io.on("connection", socket => {
   });
 });
 
-const PORT = process.env.PORT || 8000;        // ← important
+const PORT = process.env.PORT || 8000;
 http.listen(PORT, () => {
   console.log("Server running on port", PORT);
 });
