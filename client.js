@@ -16,11 +16,11 @@ const appendMessage = (message, position) => {
 };
 
 socket.on("user-joined", name => {
-    appendMessage(`${name} joined the chat`, "center");
+    appendMessage(`${name} joined the chat`, "center-green");
 });
 
 socket.on("Welcome", name => {
-    appendMessage(`Welcome ${name}`, "center");
+    appendMessage(`Welcome ${name}`, "center-green");
 });
 
 form.addEventListener("submit", e => {
@@ -36,5 +36,5 @@ socket.on("receive", data => {
 });
 
 socket.on("left", name => {
-    appendMessage(`${name} left the chat`, "center");
+    appendMessage(`${name} left the chat`, "center-red");
 });
