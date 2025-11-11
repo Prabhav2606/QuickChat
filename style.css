@@ -1,3 +1,8 @@
+input::placeholder { font-style: italic; }
+input::-webkit-input-placeholder { font-style: italic; } /* Chrome, Safari, Opera */
+input:-ms-input-placeholder { font-style: italic; } /* Internet Explorer 10-11 */
+input::-ms-input-placeholder { font-style: italic; } /* Microsoft Edge */
+
 * {
   margin: 0;
   padding: 0;
