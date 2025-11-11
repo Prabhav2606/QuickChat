@@ -25,7 +25,7 @@ header {
 }
 
 .container {
-  height: 81vh;
+  height: 78vh;
   overflow-y: auto;
   margin: 10px;
   padding: 15px;
@@ -37,7 +37,7 @@ header {
   margin: 12px 0;
   padding: 10px 15px;
   border-radius: 12px;
-  max-width: 100%;
+  max-width: 90%;
   width: fit-content !important;
   white-space: normal;
   overflow-wrap: anywhere;
