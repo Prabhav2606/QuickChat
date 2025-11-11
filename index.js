@@ -1,7 +1,13 @@
 const express = require("express");
 const app = express();
-const http = require("https").createServer(app);
-const io = require("socket.io")(https, {
+app.use((req, res, next) => {
+  if (req.headers['x-forwarded-proto'] !== 'https') {
+    return res.redirect('https://' + req.headers.host + req.url);
+  }
+  next();
+});
+const http = require("http").createServer(app);
+const io = require("socket.io")(http, {
   cors: {origin: "*"}
 });
 
@@ -26,6 +32,6 @@ io.on("connection", socket => {
 });
 
 const PORT = process.env.PORT || 8000;
-https.listen(PORT, () => {
+http.listen(PORT, () => {
   console.log("Server running on port", PORT);
 });
