@@ -13,7 +13,7 @@ const appendMessage = (message, position, showTime = false) => {
 
   // Create message text span
   const textElement = document.createElement("span");
-  textElement.innerText = message;
+  textElement.innerHTML = message;
   messageElement.appendChild(textElement);
 
   // Add timestamp only if showTime is true
@@ -21,7 +21,7 @@ const appendMessage = (message, position, showTime = false) => {
     const timeElement = document.createElement("span");
     const now = new Date();
     const timeString = now.toLocaleTimeString([], { hour12: false, hour: '2-digit', minute: '2-digit' });
-    timeElement.innerText = timeString;
+    timeElement.innerHTML = timeString;
     timeElement.classList.add("timestamp");
     messageElement.appendChild(timeElement);
   }
@@ -47,7 +47,7 @@ form.addEventListener("submit", e => {
 });
 
 socket.on("receive", data => {
-    appendMessage(`${data.name}: ${data.message}`, "left", true);
+  appendMessage(`<b>${data.name}:</b> ${data.message}`, "left", true);
 });
 
 socket.on("left", name => {
