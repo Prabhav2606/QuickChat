@@ -43,6 +43,16 @@ header {
   display: block;
 }
 
+.timestamp {
+  margin: 0px 0px 0px 4px;
+  font-size: 0.7em;
+  color: rgb(176,176,176);
+  flex-shrink: 0;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
 .left {
   background: #333;
   max-width: 70%;
