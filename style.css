@@ -26,11 +26,9 @@ header {
 
 .container {
   overflow-y: auto;
-  height: calc(100vh - 125px);
-  margin: 10px;
+  height: calc(100vh - 106px);
   padding: 0px 15px;
   background: #1b1b1b;
-  border-radius: 10px;
 }
 
 .message {
