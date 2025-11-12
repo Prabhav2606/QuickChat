@@ -81,8 +81,8 @@ form {
   bottom: 0;
   width: 100%;
   display: flex;
-  gap: 9px;
-  padding: 9px 12px;
+  gap: 8px;
+  padding: 8px 10px;
   background: #222;
 }
 
