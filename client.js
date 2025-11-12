@@ -41,7 +41,7 @@ socket.on("Welcome", name => {
 form.addEventListener("submit", e => {
     e.preventDefault();
     const message = messageInp.value;
-    appendMessage(`You: ${message}`, "right", true);
+    appendMessage(`${message}`, "right", true);
     socket.emit("send", message);
     messageInp.value = "";
 });
