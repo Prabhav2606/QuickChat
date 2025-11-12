@@ -26,8 +26,8 @@ header {
 
 .container {
   overflow-y: auto;
-  height: 79vh;
-  padding: 0px 15px;
+  height: 80vh;
+  padding: 0px 15px 10px 15px;
   background: #1b1b1b;
 }
 
