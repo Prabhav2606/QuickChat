@@ -39,13 +39,13 @@ header {
   width: fit-content !important;
   white-space: normal;
   overflow-wrap: anywhere;
-  font-size: 15px;
+  font-size: 16px;
   display: block;
 }
 
 .timestamp {
   margin: 0px 0px 0px 4px;
-  font-size: 0.7em;
+  font-size: 0.6em;
   color: rgb(176,176,176);
   flex-shrink: 0;
   position: relative;
@@ -58,7 +58,7 @@ header {
   margin: 9px 0px 0px 0px;
   background: none;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   max-width: 70%;
 }
 
