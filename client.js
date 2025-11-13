@@ -47,7 +47,7 @@ form.addEventListener("submit", e => {
 });
 
 socket.on("receive", data => {
-  appendMessage(`<b>${data.name}:</b> ${data.message}`, "left", true);
+  appendMessage(`<b style=" font-size:13px; position:relative; bottom:3px; right:2px;">${data.name}</b><br> ${data.message}`, "left", true);
 });
 
 socket.on("left", name => {
